@@ -13,7 +13,6 @@ all:	$(PROGNAME)
 distclean:	clean
 
 clean:
-	rm $(PROGNAME) || true
 
 install: all
 	$(INSTALL) -D $(PROGNAME) $(DESTDIR)$(SBINDIR)/$(PROGNAME)
