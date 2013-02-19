@@ -15,7 +15,7 @@ distclean:	clean
 clean:
 
 install: all
-	$(INSTALL) -D $(PROGNAME) $(DESTDIR)$(SBINDIR)/$(PROGNAME)
+	$(INSTALL) -D $(PROGNAME) $(DESTDIR)$(BINDIR)/$(PROGNAME)
 
 $(PROGNAME):
 	$(CC) $(PROGNAME).c -o $(PROGNAME) $(LIBS)
